@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REG FORM</title>
+</head>
+<body>
+ 
+    <h1>Course Registration Form</h1>
+    <form action="/response.html"  >
+        <fieldset>
+            <legend>Personal Details</legend>
+        <table>
+    <tr>
+        <td><label for ="firstname">First Name</label></td>
+    <td><input type="text" name="firstname" id="n"
+    placeholder="Eg: Shaiksha" required
+/>
+</td>
+</tr>
+    <tr>
+        <td><label for="surname">Sur Name</label></td>
+    <td>
+        <input type ="text" name="secondname"
+        id="sn" placeholder="Eg:shaik"
+        required>
+    </td>
+</tr>
+    <tr>
+        <td><label for="mobilenumber"> Mobile Number</label></td>
+    <td><input type="mobile" placeholder="xxxxxxx9861" required/>
+    </td>
+</tr>
+    <tr>
+        <td><label for="email">Email</label></td>
+    <td><input type ="email" placeholder="user@gmail.com"/>
+    </td>
+</tr>
+   <tr>
+    <td><label for="password">password</label></td>
+   <td><input type="password" placeholder="***********"/>
+</td>
+</tr> 
+<tr>
+    <td><label for="dob">DOB</label></td>
+    <td><input type="dob" placeholder="DD/MM/YYYY"/>
+    </td>
+    <tr>
+        <td><label for="gender">Gender</label></td>
+        <td>
+            <input required type="radio" name="gender" value="male"/>
+            <label for=""
+            >Male</label>
+        <input required type="radio" name="gender" value ="Female"/>
+           <label for=""
+           >Female</label>
+        <input required type="radio" name="gender" value="custom"/>
+           <label for=""
+           >Custom</label>
+        </td>
+</tr>
+<tr>
+<td><label for="">Select Country</label></td>
+<td>
+    <select name="" id="">
+        <option value="INDIA">INDIA</option>
+        <option value="PALESTINE">PALESTINE</option>
+            <option value="GAZA">GAZA</option>
+    </select>
+</td>
+</tr>
+<tr>
+    <td><label for="">Upload picture</label></td>
+    <td><input type="file" name="" id=""/></td>
+</tr>
+</table>
+<input type="reset"/>
+</fieldset>
+<fieldset>
+<legend>Course_Details</legend>
+<label>Select Course</label>
+  <select name="" id="">
+        <option value="Python Full Stack">Python Full Stack</option>
+        <option value="Java Full Stack">Java Full Stack</option>
+            <option value="Data Science">Data Science</option>
+    </select>
+    <br>
+    <label>Delivery Mode 
+         
+        <input  type ="checkbox" id="ONLINE">
+        <label for="ONLINE">ONLINE</label>
+        <input  type="checkbox" id="OFFLINE">
+        <label for="OFFLINE" >OFFLINE</label>
+
+    </label>
+    <br>
+    <label for="Comment*">Comment*</label>
+    <br>
+    <textarea id="commentBox" rows="5" cols="40" placeholder="Write your comment here..."></textarea>
+  <br><br>
+    <input type="submit"/>
+    </fieldset>
+</form>
+</body>
+</html>
